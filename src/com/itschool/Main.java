@@ -577,7 +577,7 @@ public class Main
 //        ForExample_2();
 //        ForExample_3();
 //        ForExample_4();
-        ForExample_5();
+//        ForExample_5();
 //        ForExample_6();
 //        ForExample_7();
 //        ForExample_8();
@@ -610,22 +610,7 @@ public class Main
               }
             }
         }
-
          */
-/*
-        long start = System.currentTimeMillis();
-
-        for (int i = 0; i < 5; i++) {
-
-
-        double a = 0.3, b = -0.7, c = 1.78, x;
-        for (int k = 10000000; k > 0; k--)
-        {
-            x = Math.pow(a, b++) / b*b*b*b*b*b;
-        }
-        }
-        System.out.println(System.currentTimeMillis()-start);
-*/
 
 //4
         double n = 1, ch = 1, x = 5, sign = +1, sum = 0;
