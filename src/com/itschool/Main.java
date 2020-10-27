@@ -111,7 +111,6 @@ public class Main
 		while (counter < 3);
 
 		System.out.println("Произведено " + counter + " итераций.");
-
 	}
 
 	// Конструкция do-while. Пример 2
@@ -257,8 +256,7 @@ public class Main
 			for (int j = 0; j < 10; j++) {
 				System.out.print("*");
 			}
-			// Переход на новую строку.
-			System.out.println();
+			System.out.println(); // Переход на новую строку.
 		}
 	}
 
@@ -500,7 +498,6 @@ public class Main
 	private static void HomeworkExample_4()
 	{
 		// Напечатать таблицу умножения для первых 10 чисел
-
 		System.out.println("Типовая задача из домашнего задания. Пример 4");
 
 		int n = 10;
@@ -573,7 +570,6 @@ public class Main
 			sign *= -1;
 			n = n * (k + 1) * (k + 2);
 		}
-
 		System.out.println(y);
 
 		double a = -3, b = +3, h = 0.5;
@@ -663,7 +659,7 @@ public class Main
 //        WhileExample_1();
 //        WhileExample_2();
 //        WhileExample_3();
-//       WhileExample_4();
+//        WhileExample_4();
 
 //        DoWhileExample_1();
 //        DoWhileExample_2();
@@ -680,7 +676,7 @@ public class Main
 //        ForExample_8();
 //        ForExample_9();
 //
-		//       LoopsOptimization();
+//        LoopsOptimization();
 //
 //        InfLoops();
 //
