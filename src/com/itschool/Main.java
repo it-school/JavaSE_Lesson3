@@ -13,7 +13,30 @@ public class Main {
 
    // Главная функция
    public static void main(String[] args) {
-        WhileExample_1();
+      final int SECONDS_PER_HOUR = 60;
+      final int MINUTES_PER_HOUR = 60;
+
+      HOURS:
+      for (int hours = 0; hours < 24; hours++) {
+         MINUTES:
+         for (int minutes = 0; minutes <= 100; minutes++) {
+            for (int seconds = 0; seconds <= 100; seconds++) {
+               System.out.println(hours + ":" + minutes + ":" + seconds);
+               if (minutes == MINUTES_PER_HOUR - 1 && seconds == SECONDS_PER_HOUR - 1)
+                  continue HOURS;
+               if (seconds == SECONDS_PER_HOUR - 1)
+                  continue MINUTES;
+            }
+         }
+      }
+      for (int hours = 0; hours < 24; hours++) {
+         for (int minutes = 0; minutes < 60; minutes++) {
+            for (int seconds = 0; seconds < 60; seconds++) {
+               System.out.println(hours + ":" + minutes + ":" + seconds);
+            }
+         }
+      }
+//        WhileExample_1();
 //        WhileExample_2();
 //        WhileExample_3();
 //        WhileExample_4();
@@ -102,15 +125,16 @@ public class Main {
       final int MAXATTEMPT = 5; // Допустимое количество попыток.
       int attempt = 0;          // Счетчик попыток.
       String color = "red";     // Задуманный цвет.
+      String value = "";
 
       // for (;attempt < MAXATTEMPT;)
       while (attempt < MAXATTEMPT) {
          attempt++;
          System.out.println("Попытка " + attempt + ":");
 
-         String value = scanner.next();
+         value = scanner.next();
 
-         if (value.equals("exit")) {
+         if (value.equalsIgnoreCase("exit")) {
             break;
          }
 
@@ -122,6 +146,18 @@ public class Main {
          break;
       }
       System.out.println("Конец игры!");
+
+      // another way
+      for (attempt = 1; attempt <= 5; attempt++) {
+         value = scanner.next();
+
+         if (value.equalsIgnoreCase("exit")) {
+            System.out.println("Конец игры!");
+            break;
+         } else if (value.equalsIgnoreCase(color)) {
+            System.out.println("Поздравляем, Вы угадали с " + attempt + " попытки!");
+         }
+      }
    }
 
    // Конструкция do-while. Пример 1
@@ -169,7 +205,6 @@ public class Main {
          System.out.println("Counter " + counter);
 
          continue;
-
          //System.out.println("Эта строка не выполнится.");
       }
       while (counter < 3);
@@ -362,7 +397,7 @@ public class Main {
          System.out.println(z + " = " + x + "  " + y);
          y += 3;
          x += 0.5;
-      } while (y < 100);
+      } while (z < 100);
    }
 
    // Примеры бесконечных циклов
@@ -515,9 +550,9 @@ public class Main {
 
       int n = 10;
 
-      for (int i = 1; i <= n; i++) {
-         for (int j = 1; j <= n; j++) {
-            System.out.println(i + "*" + j + "=" + i * j);
+      for (int left = 1; left <= n; left++) {
+         for (int right = 1; right <= n; right++) {
+            System.out.println(left + "*" + right + "=" + left * right);
          }
          System.out.println();
       }
@@ -535,7 +570,7 @@ public class Main {
 
       for (double x = a; x <= b; x++) {
          // Используем форматированный вывод с помощью функции String.format()
-         System.out.println("x = " + x + " , y = " + String.format("%.3f", x - Math.sin(x)));
+         System.out.println("x = " + x + " , y = " + String.format("%7.3f", x - Math.sin(x)));
       }
    }
 }
