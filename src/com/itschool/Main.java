@@ -13,7 +13,7 @@ public class Main {
 
    // Главная функция
    public static void main(String[] args) {
-//        WhileExample_1();
+        WhileExample_1();
 //        WhileExample_2();
 //        WhileExample_3();
 //        WhileExample_4();
@@ -35,7 +35,7 @@ public class Main {
 //
 //        InfLoops();
 //
-      LoopsOptimization();
+//        LoopsOptimization();
 //
 //        AdditionalExample_1();
 //        AdditionalExample_2();
