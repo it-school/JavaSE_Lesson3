@@ -13,6 +13,40 @@ public class Main {
 
    // Главная функция
    public static void main(String[] args) {
+//        WhileExample_1();
+//        WhileExample_2();
+//        WhileExample_3();
+//        WhileExample_4();
+//
+//        DoWhileExample_1();
+//        DoWhileExample_2();
+//        DoWhileExample_3();
+//        DoWhileExample_4();
+
+//        ForExample_1();
+//        ForExample_2();
+//        ForExample_3();
+//        ForExample_4();
+//        ForExample_5();
+//        ForExample_6();
+//        ForExample_7();
+//        ForExample_8();
+//        ForExample_9();
+
+//        BreakExample();
+
+//        InfiniteLoops();
+
+//        LoopsOptimization();
+
+//        AdditionalExample_1();
+//        AdditionalExample_2();
+//        AdditionalExample_3();
+//        AdditionalExample_4();
+//        AdditionalExample_5();
+   }
+
+   private static void BreakExample() {
       final int SECONDS_PER_HOUR = 60;
       final int MINUTES_PER_HOUR = 60;
 
@@ -36,35 +70,6 @@ public class Main {
             }
          }
       }
-//        WhileExample_1();
-//        WhileExample_2();
-//        WhileExample_3();
-//        WhileExample_4();
-//
-//        DoWhileExample_1();
-//        DoWhileExample_2();
-//        DoWhileExample_3();
-//        DoWhileExample_4();
-//
-//        ForExample_1();
-//        ForExample_2();
-//        ForExample_3();
-//        ForExample_4();
-//        ForExample_5();
-//        ForExample_6();
-//        ForExample_7();
-//        ForExample_8();
-//        ForExample_9();
-//
-//        InfLoops();
-//
-//        LoopsOptimization();
-//
-//        AdditionalExample_1();
-//        AdditionalExample_2();
-//        AdditionalExample_3();
-//        AdditionalExample_4();
-//        AdditionalExample_5();
    }
 
    // Конструкция while. Пример 1
@@ -401,7 +406,7 @@ public class Main {
    }
 
    // Примеры бесконечных циклов
-   private static void InfLoops() {
+   private static void InfiniteLoops() {
       System.out.println("\nПримеры бесконечных циклов");
 
       // Бесконечный цикл do
