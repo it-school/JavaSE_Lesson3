@@ -190,6 +190,5 @@ public class HomeWork {
          System.out.println();
       }
       System.out.println("\nромб" + System.lineSeparator());
-      // todo
    }
 }

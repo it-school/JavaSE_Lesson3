@@ -1,6 +1,10 @@
 package com.itschool.classwork;
 
+import java.util.Scanner;
+
 public class ClassWork {
+   private static final Scanner scanner = new Scanner(System.in);
+
    public static void main(String[] args) {
       System.out.println("ClassWork:" + System.lineSeparator());
       task1();

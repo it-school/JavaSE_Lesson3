@@ -13,37 +13,37 @@ public class Main {
 
    // Главная функция
    public static void main(String[] args) {
-//        WhileExample_1();
-//        WhileExample_2();
-//        WhileExample_3();
-//        WhileExample_4();
-//
-//        DoWhileExample_1();
-//        DoWhileExample_2();
-//        DoWhileExample_3();
-//        DoWhileExample_4();
+      WhileExample_1();
+      WhileExample_2();
+      WhileExample_3();
+      WhileExample_4();
 
-//        ForExample_1();
-//        ForExample_2();
-//        ForExample_3();
-//        ForExample_4();
-//        ForExample_5();
-//        ForExample_6();
-//        ForExample_7();
-//        ForExample_8();
-//        ForExample_9();
+      DoWhileExample_1();
+      DoWhileExample_2();
+      DoWhileExample_3();
+      DoWhileExample_4();
 
-//        BreakExample();
+      ForExample_1();
+      ForExample_2();
+      ForExample_3();
+      ForExample_4();
+      ForExample_5();
+      ForExample_6();
+      ForExample_7();
+      ForExample_8();
+      ForExample_9();
 
-//        InfiniteLoops();
+      BreakExample();
 
-//        LoopsOptimization();
+      InfiniteLoops();
 
-//        AdditionalExample_1();
-//        AdditionalExample_2();
-//        AdditionalExample_3();
-//        AdditionalExample_4();
-//        AdditionalExample_5();
+      LoopsOptimization();
+
+      anotherExample_1();
+      anotherExample_2();
+      anotherExample_3();
+      anotherExample_4();
+      anotherExample_5();
    }
 
    private static void BreakExample() {
@@ -490,11 +490,13 @@ public class Main {
         */
    }
 
-   // Типовая задача из задания на занятии. Пример 1
-   private static void AdditionalExample_1() {
-      // Написать программу, которая выводит на экран таблицу квадратов и кубов целых чисел а от 1 до 10.
-      // Столбцы таблицы должны иметь обозначения, например, а, а^2, а^3.
-      System.out.println("Типовая задача из домашнего задания. Пример 1");
+
+   /**
+    * Написать программу, которая выводит на экран таблицу квадратов и кубов целых чисел а от 1 до 10
+    * Столбцы таблицы должны иметь обозначения, например, а, а^2, а^3.
+    */
+   private static void anotherExample_1() {
+      System.out.println("\nНаписать программу, которая выводит на экран таблицу квадратов и кубов целых чисел а от 1 до 10");
 
       int n = 10;
       System.out.print("Введите целое число a : ");
@@ -505,10 +507,11 @@ public class Main {
       }
    }
 
-   // Типовая задача из задания на занятии. Пример 2
-   private static void AdditionalExample_2() {
-      // Определить первые 40 чисел Фибоначчи
-      System.out.println("Типовая задача из домашнего задания. Пример 2");
+   /**
+    * Определить первые 40 чисел ряда Фибоначчи
+    */
+   private static void anotherExample_2() {
+      System.out.println("\nОпределить первые 40 чисел ряда Фибоначчи");
 
       // fi–2  член ряда
       int previousElementFirst = 0;
@@ -534,48 +537,50 @@ public class Main {
       System.out.println();
    }
 
-   // Типовая задача из задания на занятии. Пример 3
-   private static void AdditionalExample_3() {
-      // Вычислить у = sin 1 + sin 1,1 + sin 1,2 + ... + sin 2.
-      System.out.println("Типовая задача из домашнего задания. Пример 3");
+   /**
+    * Вычислить у = sin 1 + sin 1,1 + sin 1,2 + ... + sin 2.
+    */
+   private static void anotherExample_3() {
+      System.out.println("\nВычислить у = sin 1 + sin 1,1 + sin 1,2 + ... + sin 2");
 
       double y = 0;
-      for (double x = 1; x <= 2.01; x += 0.1) {
-         y += Math.sin(x);
-         System.out.println("y = " + String.format("%6.3f", y));
-         // y = Double.parseDouble(String.format("%6.3f", y).replace(',', '.'));
-         // System.out.println("y = " + y);
-      }
+
+      for (double i = 1; i <= 2.00001; i += 0.1)
+         y += Math.sin(i);
+
+      System.out.println("y = " + y);
    }
 
-   // Типовая задача из задания на занятии. Пример 4
-   private static void AdditionalExample_4() {
-      // Напечатать таблицу умножения для первых 10 чисел
-      System.out.println("Типовая задача из домашнего задания. Пример 4");
+   /**
+    * Напечатать таблицу умножения для первых 10 чисел
+    */
+   private static void anotherExample_4() {
+      System.out.println("\nНапечатать таблицу умножения для первых 10 чисел");
 
       int n = 10;
 
-      for (int left = 1; left <= n; left++) {
-         for (int right = 1; right <= n; right++) {
-            System.out.println(left + "*" + right + "=" + left * right);
+      for (int i = 1; i <= n; i++) {
+         for (int j = 1; j <= n; j++) {
+            System.out.println(i + "*" + j + "=" + i * j);
          }
          System.out.println();
       }
    }
 
-   // Типовая задача из задания на занятии. Пример 5
-   private static void AdditionalExample_5() {
-      // Составить программу для вычисления значений функции   на отрезке  [a,b] с шагом  h.
-      // Результат представить в виде таблицы, первый столбец которой — значения аргумента, второй — соответствующие значения функции.
-      // F(x) = x - sin(x)
-      System.out.println("Типовая задача из домашнего задания. Пример 5");
+   /**
+    * Составить программу для вычисления значений функции на отрезке [a, b] с шагом h.
+    * Результат представить в виде таблицы, первый столбец которой — значения аргумента, второй — соответствующие значения функции.
+    * F(x) = x - sin(x)
+    */
+   private static void anotherExample_5() {
+      System.out.println("\nСоставить программу для вычисления значений функции на отрезке [a, b] с шагом h");
 
       int a = -2, b = 5;
       double h = 0.1;
 
       for (double x = a; x <= b; x++) {
          // Используем форматированный вывод с помощью функции String.format()
-         System.out.println("x = " + x + " , y = " + String.format("%7.3f", x - Math.sin(x)));
+         System.out.println("x = " + x + " , y = " + String.format("%.3f", x - Math.sin(x)));
       }
    }
 }
